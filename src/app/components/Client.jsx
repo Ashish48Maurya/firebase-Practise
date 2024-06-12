@@ -394,7 +394,7 @@ export const HomePage = () => {
     return (
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "90vh" }}>
             <h2 style={{ margin: "10px", color: "orangered" }}>Welcome</h2>
-            {isLoggedIn ? <h1 style={{ color: "yellow" }}>{user.displayName}</h1> : <h1 style={{ color: "yellow" }}>User</h1>}
+            {isLoggedIn ? <h1 style={{ color: "yellow" }}>{user?.displayName}</h1> : <h1 style={{ color: "yellow" }}>User</h1>}
         </div>
     );
 }
